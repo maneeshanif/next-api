@@ -7,7 +7,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-500 p-4">
+    <nav className="bg-blue-500 h-16 p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-lg font-bold">MyWebsite</div>
@@ -28,7 +28,7 @@ const NavBar = () => {
         {/* Navigation Links */}
         <ul
           className={`flex flex-col md:flex-row md:space-x-4 md:items-center md:static absolute bg-blue-500 w-full left-0 md:w-auto md:opacity-100 transition-all duration-300 ease-in ${
-            isOpen ? 'top-28 opacity-100' : 'top-[-400px] opacity-0'
+            isOpen ? 'top-28 bg-amber-300 md:bg-none opacity-100' : 'top-[-400px] opacity-0'
           }`}
         >
           <li className="p-2 md:p-0">
